@@ -1,0 +1,27 @@
+.team {
+    background-color: #F5F4FA;
+    @extend %section;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__title {
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.178;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--basic-text-color);
+    
+        margin-bottom: 30px;
+
+        @media  screen and (min-width:1200px) {
+            font-size: 36px;
+            line-height: 1.16;
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import './base/fonfs';
+@import './base/normalize';
+@import './base/base';
+@import './utils/variebles';
+@import './base/reset';
+@import './base/style';
+@import './base/vshidden';
+
+@import './utils/placeholders';
+
+@import './components/header';
+@import './components/header-logo';
+@import './components/logo';
+@import './components/header-nav';
+@import './components/header-contact';
+
+@import './components/hero';
+
+@import './components/advantage';
+
+@import './components/example';
+@import './components/team';
+@import './components/card-list';
+@import './components/team-card';
+@import './components/social';
+@import './components/team-social';
+@import './components/clients';
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/footer-contact';
+@import './components/footer-social';
+@import './components/footer-subscription';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/portfolio';
+@import './components/portfolio-nav';
+@import './components/portfolio-card';
+@import './components/mobile-menu';
+

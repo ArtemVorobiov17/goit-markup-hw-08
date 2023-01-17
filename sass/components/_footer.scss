@@ -1,0 +1,30 @@
+.footer {
+    background: #2F303A;
+    padding: 60px 0px 60px 0px;
+}
+
+.footer-container {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+
+    @media screen and (max-width:767px) {
+        display: block;   
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        //align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.footer-blok {
+    @media screen and (max-width:767px) {
+       text-align: center;
+    } 
+
+    @media screen and (min-width:767px) and (max-width:1199px) {
+        margin-right: 165px;
+    }
+}

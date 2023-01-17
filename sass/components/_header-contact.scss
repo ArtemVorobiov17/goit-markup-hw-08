@@ -1,0 +1,76 @@
+.header-contact__icon {
+    display: inline-flex;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-contact {
+    display: flex;
+    color: var(--secondary-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    margin-left: auto;
+
+    @media screen and (max-width:1199px) {
+        display: inline-grid;
+        gap: 10px;
+        
+    }
+
+    @extend %list;
+
+    @media screen and (max-width:767px) {
+            display: none;
+        }
+
+    &__item {
+            margin-left: 30px;
+        }
+
+    &__link {
+        @extend %link;
+
+        display: inline-flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        align-items: center;
+        color: inherit;
+    
+        transition: var(--transition-color);
+    
+        &:hover,
+        &:focus {
+            color: var(--brend-color1);
+        }
+
+        @media screen and (max-width:1199px) {
+            padding: 0;
+        }
+    }
+}
+
+/*.header-contact :hover,
+.header-contact :focus {
+    color: var(--brend-color1);
+}*/
+
+/*.header-contact__item {
+    margin-left: 30px;
+}*/
+
+/*.header-contact__link {
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: inherit;
+
+    transition: var(--transition-color);
+
+    @extend %link;
+
+}*/
