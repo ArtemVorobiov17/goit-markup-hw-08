@@ -75,82 +75,74 @@
         </ul>
 
         <button
-          class="header-burger js-open-menu"
           type="button"
+          class="menu-button js-open-menu"
           data-menu-button
           aria-expanded="false"
         >
-          <svg
-            class="hesder-burger__icon"
-            width="40"
-            height="40"
-            aria-label="Перемикач мобільного меню"
-          >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
-              class="menu-button__open"
+              class="menu-open"
               href="./images/stydi/symbol-defs.svg#icon-menu_burger"
             ></use>
           </svg>
         </button>
-      </div>
 
-      <!-- Mobile menu -->
-      <!--<div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg
-            class="menu-toggle__icon"
-            width="40"
-            height="40"
-            aria-label="Перемикач мобільного меню"
-          >
-            <use
-              class="menu-button__cross"
-              href="./images/stydi/symbol-defs.svg#icon-mobile_close"
-            ></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu">
-          <li class="mobile-menu__item">
-            <a
-              href="./index.html"
-              class="mobile-menu__link mobile-menu__link--current"
-              >Студія</a
-            >
-          </li>
-          <li class="mobile-menu__item">
-            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link">Контакти</a>
-          </li>
-        </ul>
-        <ul class="contacts-menu">
-          <li class="contacts-menu__item">
-            <a href="tel:+380961111111" class="contacts-menu__tel">
-              +38 096 111 11 11
-            </a>
-          </li>
-          <li class="contacts-menu__item">
-            <a href="mailto:info@devstudio.com" class="contacts-menu__mail">
-              info@devstudio.com
-            </a>
-          </li>
-        </ul>
-        <ul class="social-menu">
-          <li class="social-menu__item">
-            <a href="#" class="social-menu__link">Instagram</a>
-          </li>
-          <li class="social-menu__item">
-            <a href="#" class="social-menu__link">Twitter</a>
-          </li>
-          <li class="social-menu__item">
-            <a href="#" class="social-menu__link">Facebook</a>
-          </li>
-          <li class="social-menu__item">
-            <a href="#" class="social-menu__link">LinkedIn</a>
-          </li>
-        </ul>
-      </div>-->
+        <div class="menu-container js-menu-container">
+          <button type="button" class="menu-cross js-close-menu">
+            <svg width="40" height="40">
+              <use
+                class="menu-close"
+                href="./images/stydi/symbol-defs.svg#icon-mobile_close"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a
+                href="./index.html"
+                class="mobile-menu__link mobile-menu__link--current"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="contacts-menu">
+            <li class="contacts-menu__item">
+              <a href="tel:+380961111111" class="contacts-menu__tel">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contacts-menu__item">
+              <a href="mailto:info@devstudio.com" class="contacts-menu__mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="social-menu">
+            <li class="social-menu__item">
+              <a href="#" class="social-menu__link">Instagram</a>
+            </li>
+            <li class="social-menu__item">
+              <a href="#" class="social-menu__link">Twitter</a>
+            </li>
+            <li class="social-menu__item">
+              <a href="#" class="social-menu__link">Facebook</a>
+            </li>
+            <li class="social-menu__item">
+              <a href="#" class="social-menu__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main class="">
@@ -886,6 +878,7 @@
         </form>
       </div>
     </div>
+    <!--<script src="./js/open.js"></script>-->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

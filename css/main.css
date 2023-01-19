@@ -368,11 +368,11 @@ button {
   }
 }
 
-.portfolio__link, .footer-contact__link, .clients__link, .social__link, .header-contact__link, .header-nav__link, .logo {
+.mobile-menu__link, .portfolio__link, .footer-contact__link, .clients__link, .social__link, .header-contact__link, .header-nav__link, .logo {
   text-decoration: none;
 }
 
-.portfolio__list, .buttton__nav--list, .footer-social__list, .footer-contact__list, .clients__list, .team-social__list, .team__list, .example__list, .advantage__list, .header-contact, .header-nav__list {
+.mobile-menu, .portfolio__list, .buttton__nav--list, .footer-social__list, .footer-contact__list, .clients__list, .team-social__list, .team__list, .example__list, .advantage__list, .header-contact, .header-nav__list {
   list-style: none;
 }
 
@@ -381,6 +381,7 @@ button {
   border-bottom: 1px solid #ececec;
 }
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,6 +391,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
 }
 
 .logo--color {
@@ -585,6 +592,7 @@ button {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    max-height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/stydi/hero-desk.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/stydi/hero-desk.jpg);
     padding: 200px 0px;
@@ -1423,6 +1431,7 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: scale(100%) rotate(360deg);
           transform: scale(100%) rotate(360deg);
+  overflow-y: scroll;
 }
 
 .modal {
@@ -1432,7 +1441,7 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 528px;
+  max-width: 450px;
   padding: 40px 40px;
   /*height: 100%;
   max-height: 581px;*/
@@ -1440,15 +1449,28 @@ button {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  /*@media screen and (min-width:768px) {
+      top: 50%;       
+  }*/
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 .modal__title {
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 .modal__close {
   position: absolute;
@@ -1485,10 +1507,14 @@ button {
 }
 
 .form {
-  width: 448px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 100%;
+  }
 }
 .form__label {
   display: -webkit-inline-box;
@@ -1500,7 +1526,6 @@ button {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
-  margin-bottom: 4px;
 }
 .form__input {
   display: -webkit-box;
@@ -1627,7 +1652,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 13px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    margin-left: 13px;
+  }
 }
 .checkbox__input {
   -webkit-appearance: none;
@@ -1637,12 +1666,17 @@ button {
 }
 .checkbox__icon {
   position: absolute;
-  margin: 4px 8px 0 0;
+  margin: 0px 8px 0 0;
   fill: transparent;
   border: 2px solid #212121;
   border-radius: 3px;
   width: 16px;
   height: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__icon {
+    margin: 4px 8px 0 0;
+  }
 }
 .checkbox__input:checked + .checkbox__icon {
   fill: #fff;
@@ -1653,20 +1687,32 @@ button {
   position: relative;
   font-family: inherit;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__link {
   font-family: inherit;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--brend-color1);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .buttton__nav--list {
@@ -1808,11 +1854,51 @@ button {
   color: var(--secondary-text-color);
 }
 
-.header-burger {
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-container.js-menu-container {
   display: none;
 }
-@media screen and (max-width: 768px) {
-  .header-burger {
-    display: block;
-  }
+
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-container {
+  display: none;
+}
+.menu-container .menu-cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  color: aqua;
+  width: 100%;
+  left: 0;
+  display: block;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */

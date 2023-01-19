@@ -1,8 +1,12 @@
 .form {
-    width: 448px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 12px;
+    //margin-top: 12px;
+
+    @media screen and (min-width:1200px) {
+        width: 100%;
+    }
 
     &__label {
         display: inline-flex;
@@ -12,7 +16,7 @@
         line-height: 1.16;
         letter-spacing: 0.01em;
         color: var(--secondary-text-color);
-        margin-bottom: 4px;
+        //margin-bottom: 4px;
     }
 
     &__input {
@@ -107,7 +111,10 @@
 
 .checkbox {
     display: flex;
-    margin-left: 13px;
+    //margin-left: 13px;
+    @media screen and (min-width:1200px) {
+        margin-left: 13px;
+    } 
 
     &__input {
         appearance: none;
@@ -116,12 +123,16 @@
 
     &__icon {
         position: absolute;
-        margin: 4px 8px 0 0;
+        margin: 0px 8px 0 0;
         fill: transparent;
         border: 2px solid #212121;
         border-radius: 3px;
         width: 16px;
         height: 15px;
+
+        @media screen and (min-width:1200px) {
+            margin: 4px 8px 0 0;
+        }
     }
 
     &__input:checked+&__icon {
@@ -134,19 +145,29 @@
         position: relative;
         font-family: inherit;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
         color: #757575;
+
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     &__link {
         font-family: inherit;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
         text-decoration-line: underline;
         color: var(--brend-color1);
+
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 }
