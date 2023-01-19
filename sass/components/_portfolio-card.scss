@@ -15,6 +15,10 @@
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+    @media  screen and (min-width:768px) {
+        max-width: 354px;
+    }
 }
 
 .portfolio__link {
@@ -73,7 +77,7 @@
         margin-bottom: 4px;
     }
 
-    & __text {
+    &__text {
         font-family: inherit;
         font-size: 16px;
         line-height: 1.88;
